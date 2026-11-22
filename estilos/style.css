@@ -1,0 +1,215 @@
+
+/* =================================
+   1. CONFIGURAÇÕES GERAIS
+================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --blue: #25345B;
+    --blue-light: #A9C7F5;
+    --purple: #5B4BD6;
+    --lilac: #9B5DE5;
+    --lavender: #E8E5FF;
+    --white: #FFFAFC;
+
+    /* Rosa para pequenos detalhes */
+    --pink: #FF70A6;
+    --pink-light: #FFC2D1;
+}
+
+body {
+    background-image: url("imagens/fundo-site.svg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    min-height: 100vh;
+    margin: 0;
+    padding: 40px 20px;
+
+    color: var(--blue);
+}
+
+/* =================================
+   2. CONTEÚDO PRINCIPAL
+================================= */
+
+main {
+    background-color: rgba(255, 250, 252, 0.50);
+    backdrop-filter: blur(6px);
+
+    width: 100%;
+    max-width: 850px;
+
+    margin: auto;
+    padding: 35px;
+
+    border: 3px solid var(--purple);
+    border-radius: 25px;
+
+    box-shadow: 5px 5px 0 var(--blue);
+}
+
+/* =================================
+   3. CABEÇALHO
+================================= */
+
+header {
+    text-align: center;
+    padding: 25px 10px;
+}
+
+h1 {
+    color: var(--purple);
+    font-family: "Cherry Bomb One", system-ui;
+    font-weight: 400;
+    font-size: 2.8rem;
+
+    text-shadow: 3px 3px 0 var(--lavender);
+    animation: flutuar 3s ease-in-out infinite;
+
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+/* =================================
+   4. SUBTÍTULOS E TEXTOS
+================================= */
+
+h2 {
+    color: var(--purple);
+    font-family: "Kavoon", serif;
+    font-weight: 400;
+    font-size: 1.6rem;
+}
+
+p {
+    color: var(--blue);
+    font-family: "Gorditas", serif;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.8;
+}
+
+/* =================================
+   5. CARDS SCRAPBOOK
+================================= */
+
+
+article {
+    background-color: var(--lavender);
+
+    padding: 25px;
+    margin: 30px 0;
+
+    border: 2px dashed var(--lilac);
+    border-radius: 18px;
+
+    box-shadow: 5px 5px 0 var(--blue-light);
+
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
+
+    animation: aparecer 0.8s ease both;
+}
+
+article:hover {
+    transform: translateY(-6px);
+    box-shadow: 8px 8px 0 var(--purple);
+}
+
+
+/* =================================
+   6. SEÇÕES
+================================= */
+
+section {
+    background-color: rgba(232, 229, 255, 0.65);
+
+    padding: 20px;
+    margin: 25px 0;
+
+    border-radius: 18px;
+    border-left: 6px solid var(--purple);
+
+    transition: transform 0.3s ease;
+}
+
+section:hover {
+    transform: translateY(-5px);
+}
+
+/* =================================
+   7. IMAGENS
+================================= */
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* =================================
+   8. ANIMAÇÕES
+================================= */
+
+@keyframes flutuar {
+    0%, 100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-8px);
+    }
+}
+
+@keyframes aparecer {
+    from {
+        opacity: 0;
+        translate: 0 25px;
+    }
+
+    to {
+        opacity: 1;
+        translate: 0 0;
+    }
+}
+
+/* =================================
+   9. RESPONSIVIDADE
+================================= */
+
+@media (max-width: 600px) {
+
+    body {
+        padding: 15px;
+        background-attachment: scroll;
+    }
+
+    main {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.3rem;
+    }
+}
+
+/* =================================
+   10. ACESSIBILIDADE
+================================= */
+
+@media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+        animation: none !important;
+        transition: none !important;
+    }
+}

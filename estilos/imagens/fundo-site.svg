@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080" preserveAspectRatio="xMidYMid slice" xmlns:c2pa="http://c2pa.org/manifest">
+  <title>Duas facetas: desenvolvedora e recepcionista de hotel</title>
+
+  <defs>
+    <linearGradient id="ceu" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#78B4F4"/>
+      <stop offset="0.30" stop-color="#8C9FF2"/>
+      <stop offset="0.50" stop-color="#B7A6F1"/>
+      <stop offset="0.70" stop-color="#E0AEE2"/>
+      <stop offset="1" stop-color="#F6B3CF"/>
+    </linearGradient>
+    <radialGradient id="brilho" cx="0.5" cy="0.15" r="0.65">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity=".5"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="predio" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#E6DDFB"/>
+    </linearGradient>
+    <linearGradient id="painelDev" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#8F9BF5"/>
+      <stop offset="1" stop-color="#6F7BE0"/>
+    </linearGradient>
+    <linearGradient id="painelHotel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#F3E3F7"/>
+    </linearGradient>
+    <radialGradient id="avela" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#6B4423"/>
+      <stop offset="0.55" stop-color="#A9822F"/>
+      <stop offset="1" stop-color="#7C8B3C"/>
+    </radialGradient>
+    <linearGradient id="fadeG" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#000000"/>
+    </linearGradient>
+    <mask id="fade"><rect x="0" y="0" width="760" height="1080" fill="url(#fadeG)"/></mask>
+    <pattern id="pontos" width="44" height="44" patternUnits="userSpaceOnUse">
+      <circle cx="3" cy="3" r="2.5" fill="#FFFFFF" opacity=".55"/>
+    </pattern>
+    <polygon id="estrela" points="0,-12 3.5,-3.7 11.4,-3.7 5.7,1.9 7.1,9.7 0,5.2 -7.1,9.7 -5.7,1.9 -11.4,-3.7 -3.5,-3.7"/>
+
+    <!-- ===== PERSONAGEM (origem = centro do rosto) ===== -->
+    <g id="cabeloTras">
+      <path d="M-88 -6 C-96 -104 -50 -114 0 -114 C50 -114 96 -104 88 -6 C96 70 100 130 80 180 L-80 180 C-100 130 -96 70 -88 -6 Z" fill="#3B2416"/>
+    </g>
+    <g id="rosto">
+      <rect x="-19" y="50" width="38" height="85" fill="#EBC3A3"/>
+      <ellipse cx="0" cy="86" rx="34" ry="9" fill="#D9A582" opacity=".55"/>
+      <!-- rosto redondo, queixo um pouco fino -->
+      <path d="M-64 0 C-64 -48 -34 -70 0 -70 C34 -70 64 -48 64 0 C64 40 34 82 0 82 C-34 82 -64 40 -64 0 Z" fill="#F6D2B8"/>
+      <circle cx="-42" cy="34" r="11" fill="#F4A7A0" opacity=".45"/>
+      <circle cx="42" cy="34" r="11" fill="#F4A7A0" opacity=".45"/>
+      <!-- sobrancelhas -->
+      <path d="M-44 -9 Q-28 -19 -11 -11" fill="none" stroke="#3A2418" stroke-width="4.5" stroke-linecap="round"/>
+      <path d="M11 -11 Q28 -19 44 -9" fill="none" stroke="#3A2418" stroke-width="4.5" stroke-linecap="round"/>
+      <!-- olhos cor de avelã -->
+      <ellipse cx="-26" cy="6" rx="11" ry="8" fill="#FFFFFF"/>
+      <ellipse cx="26" cy="6" rx="11" ry="8" fill="#FFFFFF"/>
+      <circle cx="-26" cy="6" r="6.2" fill="url(#avela)"/>
+      <circle cx="26" cy="6" r="6.2" fill="url(#avela)"/>
+      <circle cx="-26" cy="6" r="2.7" fill="#1F1A24"/>
+      <circle cx="26" cy="6" r="2.7" fill="#1F1A24"/>
+      <circle cx="-23.8" cy="3.8" r="1.6" fill="#FFFFFF"/>
+      <circle cx="28.2" cy="3.8" r="1.6" fill="#FFFFFF"/>
+      <path d="M-38 5 Q-26 -4 -14 5" fill="none" stroke="#2A1B16" stroke-width="3" stroke-linecap="round"/>
+      <path d="M14 5 Q26 -4 38 5" fill="none" stroke="#2A1B16" stroke-width="3" stroke-linecap="round"/>
+      <!-- nariz e sorriso -->
+      <path d="M0 22 Q5 30 -1 32" fill="none" stroke="#D9A07F" stroke-width="2.5" stroke-linecap="round"/>
+      <path d="M-14 50 Q0 62 14 50" fill="none" stroke="#B5574F" stroke-width="4.5" stroke-linecap="round"/>
+    </g>
+    <g id="cabeloFrente">
+      <path d="M-68 10 C-76 -50 -42 -84 4 -82 C48 -80 76 -46 68 10 C62 -14 50 -36 32 -46 C10 -34 -34 -22 -68 10 Z" fill="#3B2416"/>
+      <path d="M-40 -62 C-20 -72 10 -72 30 -62" fill="none" stroke="#5B3A24" stroke-width="3" stroke-linecap="round" opacity=".6"/>
+      <path d="M-62 4 C-90 56 -92 120 -78 170 C-64 140 -58 80 -52 20 Z" fill="#3B2416"/>
+      <path d="M62 4 C90 56 92 120 78 170 C64 140 58 80 52 20 Z" fill="#3B2416"/>
+      <path d="M-76 60 C-80 100 -76 130 -70 150" fill="none" stroke="#5B3A24" stroke-width="3" stroke-linecap="round" opacity=".6"/>
+      <path d="M76 60 C80 100 76 130 70 150" fill="none" stroke="#5B3A24" stroke-width="3" stroke-linecap="round" opacity=".6"/>
+    </g>
+  </defs>
+
+  <!-- CÉU: azul (dev) que vira rosa (hotel) -->
+  <rect width="1920" height="1080" fill="url(#ceu)"/>
+  <rect width="1920" height="1080" fill="url(#brilho)"/>
+
+  <!-- NUVENS -->
+  <g fill="#FFFFFF" opacity=".5">
+    <ellipse cx="520" cy="170" rx="110" ry="30"/><ellipse cx="585" cy="152" rx="70" ry="32"/>
+    <ellipse cx="1000" cy="110" rx="120" ry="28"/><ellipse cx="1065" cy="94" rx="76" ry="30"/>
+    <ellipse cx="1500" cy="120" rx="100" ry="26"/><ellipse cx="1560" cy="104" rx="64" ry="28"/>
+  </g>
+
+  <!-- LADO DEV: grade de pontos e rede -->
+  <rect x="0" y="0" width="760" height="1080" fill="url(#pontos)" mask="url(#fade)" opacity=".7"/>
+  <g stroke="#FFFFFF" stroke-width="2" opacity=".5" fill="none">
+    <polyline points="380,400 470,330 560,400 650,320"/>
+    <polyline points="470,330 500,470 560,400"/>
+  </g>
+  <g fill="#FFFFFF" opacity=".85">
+    <circle cx="380" cy="400" r="8"/><circle cx="470" cy="330" r="11"/><circle cx="560" cy="400" r="8"/>
+    <circle cx="650" cy="320" r="9"/><circle cx="500" cy="470" r="6"/>
+  </g>
+  <g font-family="'Courier New', monospace" font-weight="700" fill="#FFFFFF">
+    <text x="410" y="270" font-size="84" opacity=".4">&lt;/&gt;</text>
+    <text x="600" y="520" font-size="90" opacity=".3">{ }</text>
+  </g>
+
+  <!-- terminal flutuante -->
+  <g>
+    <rect x="50" y="110" width="290" height="190" rx="16" fill="#1E2F5E" opacity=".88"/>
+    <circle cx="76" cy="134" r="6" fill="#F8A5C2"/><circle cx="96" cy="134" r="6" fill="#FFE08A"/><circle cx="116" cy="134" r="6" fill="#9BE3C0"/>
+    <text x="76" y="178" font-family="'Courier New', monospace" font-size="20" font-weight="700" fill="#9BE3C0">$ npm run dev</text>
+    <rect x="76" y="196" width="150" height="8" rx="4" fill="#6EC1F6"/>
+    <rect x="76" y="220" width="110" height="8" rx="4" fill="#F8A5C2"/>
+    <rect x="76" y="244" width="170" height="8" rx="4" fill="#FFE08A"/>
+  </g>
+
+  <!-- PONTE entre os dois lados -->
+  <path d="M640 430 Q960 250 1290 420" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-dasharray="3 16" opacity=".7"/>
+
+  <!-- LADO HOTEL: ícones no céu -->
+  <path d="M1250 300 a26 26 0 0 1 26 26 c0 22 -26 52 -26 52 c0 0 -26 -30 -26 -52 a26 26 0 0 1 26 -26 Z" fill="#FFFFFF" opacity=".55"/>
+  <circle cx="1250" cy="326" r="9" fill="#F8A5C2"/>
+  <g transform="rotate(-25 1190 540)" fill="none" stroke="#FFFFFF" stroke-width="8" stroke-linecap="round" opacity=".5">
+    <circle cx="1170" cy="540" r="22"/>
+    <path d="M1192 540 H1272 M1250 540 V560 M1268 540 V556"/>
+  </g>
+
+  <!-- BRILHOS -->
+  <path d="M300 362 Q300 380 318 380 Q300 380 300 398 Q300 380 282 380 Q300 380 300 362 Z" fill="#FFFFFF" opacity="0.8"/><path d="M700 218 Q700 240 722 240 Q700 240 700 262 Q700 240 678 240 Q700 240 700 218 Z" fill="#FFFFFF" opacity="0.8"/><path d="M1290 176 Q1290 200 1314 200 Q1290 200 1290 224 Q1290 200 1266 200 Q1290 200 1290 176 Z" fill="#FFFFFF" opacity="0.8"/><path d="M1180 684 Q1180 700 1196 700 Q1180 700 1180 716 Q1180 700 1164 700 Q1180 700 1180 684 Z" fill="#FFFFFF" opacity="0.8"/><path d="M760 634 Q760 650 776 650 Q760 650 760 666 Q760 650 744 650 Q760 650 760 634 Z" fill="#FFFFFF" opacity="0.6"/><path d="M1500 484 Q1500 500 1516 500 Q1500 500 1500 516 Q1500 500 1484 500 Q1500 500 1500 484 Z" fill="#FFFFFF" opacity="0.7"/>
+
+  <!-- PRÉDIOS AO FUNDO -->
+  <g>
+    <rect x="1230" y="700" width="100" height="380" rx="6" fill="#FFFFFF" opacity=".24"/>
+    <rect x="1600" y="650" width="100" height="430" rx="6" fill="#FFFFFF" opacity=".24"/>
+    <rect x="1830" y="560" width="110" height="520" rx="6" fill="#FFFFFF" opacity=".24"/>
+    <rect x="1710" y="750" width="80" height="330" rx="6" fill="#FFFFFF" opacity=".24"/>
+    
+  </g>
+
+  <!-- HOTEL -->
+  <g>
+    <rect x="1335" y="290" width="260" height="790" fill="url(#predio)"/>
+    <rect x="1322" y="262" width="286" height="30" rx="10" fill="#B58FE8"/>
+    <rect x="1360" y="190" width="210" height="58" rx="14" fill="#7B5CD6"/>
+    <text x="1465" y="232" font-family="Arial, Helvetica, sans-serif" font-size="32" font-weight="700" fill="#FFFFFF" text-anchor="middle" letter-spacing="8">HOTEL</text>
+    <use href="#estrela" transform="translate(1415,162) scale(1.2)" fill="#FFD966"/>
+    <use href="#estrela" transform="translate(1465,152) scale(1.2)" fill="#FFD966"/>
+    <use href="#estrela" transform="translate(1515,162) scale(1.2)" fill="#FFD966"/>
+    <rect x="1352" y="322" width="52" height="62" rx="6" fill="#D2C9F5"/>
+    <rect x="1352" y="352" width="52" height="3" fill="#FFFFFF" opacity=".6"/>
+    <rect x="1430" y="322" width="52" height="62" rx="6" fill="#FFE9A8"/>
+    <rect x="1430" y="352" width="52" height="3" fill="#FFFFFF" opacity=".6"/>
+    <rect x="1508" y="322" width="52" height="62" rx="6" fill="#D2C9F5"/>
+    <rect x="1508" y="352" width="52" height="3" fill="#FFFFFF" opacity=".6"/>
+    <rect x="1352" y="417" width="52" height="62" rx="6" fill="#FFE9A8"/>
+    <rect x="1352" y="447" width="52" height="3" fill="#FFFFFF" opacity=".6"/>
+    <rect x="1430" y="417" width="52" height="62" rx="6" fill="#D2C9F5"/>
+    <rect x="1430" y="447" width="52" height="3" fill="#FFFFFF" opacity=".6"/>
+    <rect x="1508" y="417" width="52" height="62" rx="6" fill="#FFE9A8"/>
+    <rect x="1508" y="447" width="52" height="3" fill="#FFFFFF" opacity=".6"/>
+    <rect x="1352" y="512" width="52" height="62" rx="6" fill="#D2C9F5"/>
+    <rect x="1352" y="542" width="52" height="3" fill="#FFFFFF" opacity=".6"/>
+    <rect x="1430" y="512" width="52" height="62" rx="6" fill="#FFE9A8"/>
+    <rect x="1430" y="542" width="52" height="3" fill="#FFFFFF" opacity=".6"/>
+    <rect x="1508" y="512" width="52" height="62" rx="6" fill="#D2C9F5"/>
+    <rect x="1508" y="542" width="52" height="3" fill="#FFFFFF" opacity=".6"/>
+    <rect x="1352" y="607" width="52" height="62" rx="6" fill="#FFE9A8"/>
+    <rect x="1352" y="637" width="52" height="3" fill="#FFFFFF" opacity=".6"/>
+    <rect x="1430" y="607" width="52" height="62" rx="6" fill="#D2C9F5"/>
+    <rect x="1430" y="637" width="52" height="3" fill="#FFFFFF" opacity=".6"/>
+    <rect x="1508" y="607" width="52" height="62" rx="6" fill="#FFE9A8"/>
+    <rect x="1508" y="637" width="52" height="3" fill="#FFFFFF" opacity=".6"/>
+    <rect x="1352" y="702" width="52" height="62" rx="6" fill="#D2C9F5"/>
+    <rect x="1352" y="732" width="52" height="3" fill="#FFFFFF" opacity=".6"/>
+    <rect x="1430" y="702" width="52" height="62" rx="6" fill="#FFE9A8"/>
+    <rect x="1430" y="732" width="52" height="3" fill="#FFFFFF" opacity=".6"/>
+    <rect x="1508" y="702" width="52" height="62" rx="6" fill="#D2C9F5"/>
+    <rect x="1508" y="732" width="52" height="3" fill="#FFFFFF" opacity=".6"/>
+  </g>
+
+  <!-- ================= LADO DEV ================= -->
+  <g transform="translate(185 455)">
+    <use href="#cabeloTras"/>
+    <!-- moletom -->
+    <path d="M-150 350 C-150 172 -92 124 0 124 C92 124 150 172 150 350 Z" fill="#7B6CF6"/>
+    <use href="#rosto"/>
+    <path d="M-62 120 C-40 160 40 160 62 120" fill="none" stroke="#6A5BE0" stroke-width="22" stroke-linecap="round"/>
+    <path d="M-16 150 L-18 215 M16 150 L18 215" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round"/>
+    <circle cx="-18" cy="219" r="4.5" fill="#FFFFFF"/><circle cx="18" cy="219" r="4.5" fill="#FFFFFF"/>
+    <text x="0" y="272" font-family="'Courier New', monospace" font-size="44" font-weight="700" fill="#FFFFFF" opacity=".9" text-anchor="middle">&lt;/&gt;</text>
+    <use href="#cabeloFrente"/>
+    <!-- fones de ouvido -->
+    <path d="M-90 -4 C-90 -112 90 -112 90 -4" fill="none" stroke="#2B3F7A" stroke-width="11" stroke-linecap="round"/>
+    <rect x="-106" y="-26" width="30" height="64" rx="14" fill="#2B3F7A"/><rect x="-100" y="-12" width="10" height="36" rx="5" fill="#6EC1F6"/>
+    <rect x="76" y="-26" width="30" height="64" rx="14" fill="#2B3F7A"/><rect x="90" y="-12" width="10" height="36" rx="5" fill="#6EC1F6"/>
+  </g>
+
+  <!-- mesa dev -->
+  <g>
+    <rect x="30" y="780" width="590" height="26" rx="12" fill="#EEF2FF"/>
+    <rect x="52" y="806" width="546" height="274" fill="url(#painelDev)"/>
+    <text x="325" y="930" font-family="'Courier New', monospace" font-size="52" font-weight="700" fill="#FFFFFF" text-anchor="middle" letter-spacing="4" opacity=".92">&lt;/&gt; DEV</text>
+    <!-- monitor -->
+    <rect x="360" y="560" width="240" height="190" rx="12" fill="#1E2F5E"/>
+    <rect x="368" y="568" width="224" height="174" rx="8" fill="#26397A"/>
+    <rect x="382" y="584" width="90" height="8" rx="4" fill="#6EC1F6"/>
+    <rect x="398" y="602" width="120" height="8" rx="4" fill="#F8A5C2"/>
+    <rect x="398" y="620" width="70" height="8" rx="4" fill="#FFE08A"/>
+    <rect x="382" y="638" width="140" height="8" rx="4" fill="#9BE3C0"/>
+    <rect x="398" y="656" width="100" height="8" rx="4" fill="#6EC1F6"/>
+    <rect x="382" y="674" width="60" height="8" rx="4" fill="#F8A5C2"/>
+    <rect x="398" y="692" width="110" height="8" rx="4" fill="#FFE08A"/>
+    <rect x="468" y="750" width="24" height="22" fill="#C9D3F5"/>
+    <rect x="428" y="768" width="104" height="12" rx="6" fill="#C9D3F5"/>
+    <!-- teclado -->
+    <rect x="130" y="764" width="180" height="16" rx="6" fill="#3A4F94"/>
+    <line x1="140" y1="772" x2="300" y2="772" stroke="#8FB4F2" stroke-width="3" stroke-linecap="round" stroke-dasharray="8 5"/>
+    <!-- caneca -->
+    <rect x="58" y="738" width="38" height="42" rx="8" fill="#FFFFFF"/>
+    <path d="M96 748 q16 2 16 14 q0 12 -16 12" fill="none" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round"/>
+    <path d="M70 726 q-6 -10 0 -18 M84 726 q-6 -10 0 -18" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" opacity=".6"/>
+  </g>
+
+  <!-- ================= LADO RECEPÇÃO ================= -->
+  <g transform="translate(1700 455)">
+    <use href="#cabeloTras"/>
+    <!-- blazer -->
+    <path d="M-150 350 C-150 172 -92 124 0 124 C92 124 150 172 150 350 Z" fill="#2B3F7A"/>
+    <use href="#rosto"/>
+    <polygon points="-24,122 0,196 24,122" fill="#FFFFFF"/>
+    <polygon points="-18,122 0,158 18,122" fill="#EBC3A3"/>
+    <path d="M-24 122 L-3 232 L-66 190 Z" fill="#22336B"/>
+    <path d="M24 122 L3 232 L66 190 Z" fill="#22336B"/>
+    <rect x="54" y="196" width="64" height="40" rx="6" fill="#FFFFFF"/>
+    <rect x="63" y="206" width="38" height="6" rx="3" fill="#8F9BF5"/>
+    <rect x="63" y="219" width="26" height="6" rx="3" fill="#F8A5C2"/>
+    <circle cx="-66" cy="208" r="7" fill="#F5C84C"/>
+    <use href="#cabeloFrente"/>
+  </g>
+
+  <!-- balcão da recepção -->
+  <g>
+    <rect x="1320" y="780" width="580" height="26" rx="12" fill="#FFFFFF"/>
+    <rect x="1342" y="806" width="558" height="274" fill="url(#painelHotel)"/>
+    <rect x="1342" y="846" width="558" height="8" fill="#F8A5C2" opacity=".8"/>
+    <text x="1600" y="940" font-family="Arial, Helvetica, sans-serif" font-size="46" font-weight="700" fill="#7B5CD6" text-anchor="middle" letter-spacing="7">RECEPÇÃO</text>
+    <!-- campainha -->
+    <path d="M1362 774 Q1362 732 1398 732 Q1434 732 1434 774 Z" fill="#F5C84C"/>
+    <circle cx="1398" cy="726" r="6" fill="#D9A92E"/>
+    <rect x="1354" y="772" width="88" height="9" rx="4.5" fill="#D9A92E"/>
+    <path d="M1374 764 Q1376 746 1390 742" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" opacity=".7"/>
+    <!-- cartão-chave -->
+    <g transform="rotate(-8 1510 760)">
+      <rect x="1480" y="742" width="60" height="38" rx="6" fill="#FFFFFF" stroke="#B58FE8" stroke-width="3"/>
+      <rect x="1490" y="752" width="14" height="11" rx="2" fill="#F5C84C"/>
+      <path d="M1516 750 Q1524 758 1516 766 M1522 746 Q1534 758 1522 770" fill="none" stroke="#8F9BF5" stroke-width="3" stroke-linecap="round"/>
+    </g>
+    <!-- mala -->
+    <g>
+      <path d="M1822 880 v-20 q0 -10 10 -10 h20 q10 0 10 10 v20" fill="none" stroke="#C86A9E" stroke-width="7" stroke-linecap="round"/>
+      <rect x="1790" y="880" width="104" height="150" rx="16" fill="#F68FBF"/>
+      <rect x="1832" y="880" width="12" height="150" fill="#E873AB"/>
+      <rect x="1790" y="935" width="104" height="8" fill="#E873AB"/>
+      <circle cx="1815" cy="1042" r="8" fill="#6A5BA0"/><circle cx="1869" cy="1042" r="8" fill="#6A5BA0"/>
+    </g>
+  </g>
+<metadata><c2pa:manifest>AAAWgmp1bWIAAAAeanVtZGMycGEAEQAQgAAAqgA4m3EDYzJwYQAAABZcanVtYgAAAEdqdW1kYzJtYQARABCAAACqADibcQN1cm46YzJwYToyM2ZjOTY2ZC1iYjA5LTRhOTItYmYwNi04YWNlYjVhYmJiOGUAAAADl2p1bWIAAAApanVtZGMyYXMAEQAQgAAAqgA4m3EDYzJwYS5hc3NlcnRpb25zAAAAALxqdW1iAAAARGp1bWRjYm9yABEAEIAAAKoAOJtxE2MycGEuaW5ncmVkaWVudC52MwAAAAAYYzJzaChlZ+DHKkRrvhhPJQVzQf4AAABwY2JvcqNpZGM6Zm9ybWF0bWltYWdlL3N2Zyt4bWxqaW5zdGFuY2VJRHgseG1wOmlpZDozNzc0N2UyYy04OGMyLTQwMjktOWNmZi05OTcxNGI1ZTlkNDNscmVsYXRpb25zaGlwaHBhcmVudE9mAAAB4mp1bWIAAABBanVtZGNib3IAEQAQgAAAqgA4m3ETYzJwYS5hY3Rpb25zLnYyAAAAABhjMnNoGkNgQXfjkQNDLT/DmOS2rwAAAZljYm9yomdhY3Rpb25zgqJmYWN0aW9ua2MycGEub3BlbmVkanBhcmFtZXRlcnOha2luZ3JlZGllbnRzgaJjdXJseC1zZWxmI2p1bWJmPWMycGEuYXNzZXJ0aW9ucy9jMnBhLmluZ3JlZGllbnQudjNkaGFzaFggEflq12MZoKLBXQt4fFLX3vM+dJVdLe4lUeCpkq+ScuOkZmFjdGlvbngdY29tLmFudGhyb3BpYy5jbGF1ZGUucHJvdmlkZWRqcGFyYW1ldGVyc6F4H2NvbS5hbnRocm9waWMub3JpZ2luLWNvbmZpZGVuY2VndW5rbm93bmtkZXNjcmlwdGlvbnhmQ2xhdWRlIHByb3ZpZGVkIHRoaXMgZmlsZSBhdCB0aGUgcmVxdWVzdCBvZiBhIHVzZXIgYW5kIG1heSBoYXZlIGNyZWF0ZWQgb3IgbW9kaWZpZWQgdGhlIGZpbGUgY29udGVudHMubXNvZnR3YXJlQWdlbnShZG5hbWVmQ2xhdWRlcmFsbEFjdGlvbnNJbmNsdWRlZPUAAADIanVtYgAAAEBqdW1kY2JvcgARABCAAACqADibcRNjMnBhLmhhc2guZGF0YQAAAAAYYzJzaPbVn2785i9y4erlt0KaIzsAAACAY2JvcqVjYWxnZnNoYTI1NmNwYWRMAAAAAAAAAAAAAAAAZGhhc2hYIFAnRXkFiuof3JNcj1un1CRatsner6VT44KgwtBzEAwMZG5hbWVuanVtYmYgbWFuaWZlc3RqZXhjbHVzaW9uc4GiZXN0YXJ0GUKMZmxlbmd0aBkeBAAAAj5qdW1iAAAAJ2p1bWRjMmNsABEAEIAAAKoAOJtxA2MycGEuY2xhaW0udjIAAAACD2Nib3KlY2FsZ2ZzaGEyNTZpc2lnbmF0dXJleE1zZWxmI2p1bWJmPS9jMnBhL3VybjpjMnBhOjIzZmM5NjZkLWJiMDktNGE5Mi1iZjA2LThhY2ViNWFiYmI4ZS9jMnBhLnNpZ25hdHVyZWppbnN0YW5jZUlEeCx4bXA6aWlkOmM4YzY0YTVhLWZiMDktNDc4MS1hMGE1LTBlNDRiNmQxM2VjMHJjcmVhdGVkX2Fzc2VydGlvbnODomN1cmx4LXNlbGYjanVtYmY9YzJwYS5hc3NlcnRpb25zL2MycGEuaW5ncmVkaWVudC52M2RoYXNoWCAR+WrXYxmgosFdC3h8Utfe8z50lV0t7iVR4KmSr5Jy46JjdXJseCpzZWxmI2p1bWJmPWMycGEuYXNzZXJ0aW9ucy9jMnBhLmFjdGlvbnMudjJkaGFzaFgg2jiGXonjuRDM3pLuFAb3JQhmZ7UcxsutrVAflmpLiC2iY3VybHgpc2VsZiNqdW1iZj1jMnBhLmFzc2VydGlvbnMvYzJwYS5oYXNoLmRhdGFkaGFzaFgg1wSvJaMDBNaGay+MLsWjtzcjqQ2muTHnhnQU+g1iocp0Y2xhaW1fZ2VuZXJhdG9yX2luZm+jZG5hbWVvQW50aHJvcGljIEZpbGVzZ3ZlcnNpb25lMS4wLjBrc3BlY1ZlcnNpb25lMi40LjAAABA4anVtYgAAAChqdW1kYzJjcwARABCAAACqADibcQNjMnBhLnNpZ25hdHVyZQAAABAIY2JvctKEWQISogEmGCFZAgowggIGMIIBjaADAgECAhRA5aAK7sI50L64g/oGQgU9Z1UTADAKBggqhkjOPQQDAzBJMRcwFQYDVQQKEw5BbnRocm9waWMsIFBCQzEuMCwGA1UEAxMlQW50aHJvcGljIENvbnRlbnQgQ3JlZGVudGlhbHMgUm9vdCBDQTAeFw0yNjA4MDcxODQzNTZaFw0yODA4MDYxOTQzNTZaMEQxFzAVBgNVBAoTDkFudGhyb3BpYywgUEJDMSkwJwYDVQQDEyBBbnRocm9waWMgQ2xhdWRlIENvbnRlbnQgU2lnbmluZzBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABJh6CmvLUBgFFNU0vUKlOVtE6djd17L5SuwX0LemFisBM3dkd/3cyjxFA3Qo5S46fX0/ihY0VZ7mfb9KF703t5OjWDBWMA4GA1UdDwEB/wQEAwIHgDAVBgNVHSUEDjAMBgorBgEEAYPoXgIBMAwGA1UdEwEB/wQCMAAwHwYDVR0jBBgwFoAUzlHiBIFOZFsj+OPEz5o+nMHXXMIwCgYIKoZIzj0EAwMDZwAwZAIwMXMdFJ4BetLLVY7ORuE9noqbbAZOZn/aArXyTwFAZfKrPzxF2vPoJNf1+UCdg1XGAjBwX1zd9WGqYkqmL5SFqw1QySjr1zJfpJM9+1rdDwSPLMOPOjKuiXjoU/pUUeG9RwmhY3BhZFkNngAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPZYQKCVBpbcbg5j2e8+Jf4XRMKs5m1PK7g9Vn+HEqYpR0IzYARm9ApSwb6MTruIkaX0qUTYXUgbJoMURjp+QFMOe34=</c2pa:manifest></metadata></svg>
