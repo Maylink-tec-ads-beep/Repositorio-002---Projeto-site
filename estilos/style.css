@@ -48,9 +48,9 @@ h1 {
   font-family: "Cherry Bomb One", system-ui;
   font-weight: 400;
   font-size: 2.8rem;
-text-shadow: 3px 3px 0 var(--pink-light);
-    animation: flutuar 3s ease-in-out infinite;
-    text-align: center;
+  text-shadow: 3px 3px 0 #5B4BD6);
+  animation: flutuar 3s ease-in-out infinite;
+  text-align: center;
   margin-bottom: 15px;
   text-shadow: 3px 3px 0px #D8D1FF;
   
@@ -71,6 +71,38 @@ p{
   line-height: 1.8;
 }
 
+article {
+    background-color: ;
+
+    padding: 25px;
+    margin: 30px 0;
+
+    border: 2px dashed var(--pink);
+    border-radius: 18px;
+
+    box-shadow: 5px 5px 0 var(--pink-light);
+
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
+
+    animation: aparecer 0.8s ease both;
+}
+
+article:nth-of-type(1) {
+    transform: rotate(-1deg);
+    animation-delay: 0.2s;
+}
+
+article:nth-of-type(2) {
+    transform: rotate(1deg);
+    animation-delay: 0.4s;
+}
+
+article:hover {
+    transform: translateY(-6px) rotate(0deg);
+    box-shadow: 8px 8px 0 var(--purple);
+}
+
 
 /* SEÇÕES */
 section {
@@ -85,8 +117,35 @@ section {
 section:hover {
     transform: translateY(-5px);
 }
-/* RESPONSIVIDADE */
+
+@keyframes flutuar {
+    0%, 100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-8px);
+    }
+}
+
+@keyframes aparecer {
+    from {
+        opacity: 0;
+        translate: 0 25px;
+    }
+
+    to {
+        opacity: 1;
+        translate: 0 0;
+    }
+}
+
+/* =================================
+   9. RESPONSIVIDADE
+================================= */
+
 @media (max-width: 600px) {
+
     body {
         padding: 15px;
         background-attachment: scroll;
@@ -105,6 +164,14 @@ section:hover {
     }
 }
 
+/* ACESSIBILIDADE */
+
+@media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+        animation: none !important;
+        transition: none !important;
+    }
+}
 
 img { src: url(imagens/banner.svg);
         max-width: 100%;
