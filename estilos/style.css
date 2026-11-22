@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 
 /* =================================
    1. CONFIGURAÇÕES GERAIS
@@ -213,3 +214,21 @@ img {
         transition: none !important;
     }
 }
+=======
+* {
+    
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+body {
+  background-color: #F2F8FD;
+
+}
+
+main {
+    background-color: #e4ebf1;
+    width: 500px;
+    margin: auto;
+    box-shadow: 3px 3px 5px rgb(36, 34, 34);
+}
+>>>>>>> Stashed changes
