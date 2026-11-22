@@ -89,10 +89,11 @@ h2 {
 
 p {
     color: var(--blue);
-    font-family: "Gorditas", serif;
-    font-weight: 400;
-    font-size: 1rem;
-    line-height: 1.8;
+    font-family: "Mali", cursive;
+  font-weight: 600;
+  font-style: normal;
+    font-size: 1.1rem;
+    line-height: 1.4;
 }
 
 /* =================================
