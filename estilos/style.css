@@ -2,6 +2,17 @@
     
     box-sizing: border-box;
 }
+
+:root{
+    --blue: #25345B;
+    --blue-light: #A9C7F5;
+    --purple: #5B4BD6;
+    --lilac: #9B5DE5;
+    --lavender: #E8E5FF;
+    --white: #FFFAFC;
+
+}
+
 body {
     background-image: url("imagens/fundo-site.svg");
     background-size: cover;
@@ -10,15 +21,38 @@ body {
     background-attachment: fixed;
     min-height: 100vh;
     margin: 0;
+    padding: 40px 20px;
     color: #1E2F5E;
  
+}
+
+main {
+    background-color: rgba(255, 250, 252, 0.90);
+    backdrop-filter: blur(6px);
+    width: 100%;
+    max-width: 850px;
+    margin: auto;
+    padding: 35px;
+    border: 3px solid #5B4BD6;
+    border-radius: 25px;
+    box-shadow: 5px 5px 0px #1E2F5E;
+}
+
+header {
+    text-align: center;
+    padding: 25px 10px;
 }
 
 h1 {
     color: #5B4BD6;
   font-family: "Cherry Bomb One", system-ui;
   font-weight: 400;
-  font-style: normal;
+  font-size: 2.8rem;
+text-shadow: 3px 3px 0 var(--pink-light);
+    animation: flutuar 3s ease-in-out infinite;
+    text-align: center;
+  margin-bottom: 15px;
+  text-shadow: 3px 3px 0px #D8D1FF;
   
 }
 
@@ -26,25 +60,54 @@ h2 {
     color: #5B4BD6;
   font-family: "Kavoon", serif;
   font-weight: 400;
-  font-style: normal;
+  font-size: 1.6rem;
 }
 
 p{
     color: #2B3F7A	;
   font-family: "Gorditas", serif;
   font-weight: 400;
-  font-style: normal;
+  font-size: 1rem;
+  line-height: 1.8;
 }
 
-main {
-    background-color: rgba(255, 253, 253, 0.2);
-    backdrop-filter: blur(3px);
-    width: 700PX;
-    margin: auto;
+
+/* SEÇÕES */
+section {
+    background-color: rgba(232, 227, 255, 0.65);
     padding: 20px;
-    box-shadow: 3px 3px 5px rgb(36, 34, 34);
+    margin: 25px 0;
+    border-radius: 18px;
+    border-left: 6px solid #5B4BD6;
+    transition: transform 0.3s ease;
 }
+
+section:hover {
+    transform: translateY(-5px);
+}
+/* RESPONSIVIDADE */
+@media (max-width: 600px) {
+    body {
+        padding: 15px;
+        background-attachment: scroll;
+    }
+
+    main {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.3rem;
+    }
+}
+
+
 img { src: url(imagens/banner.svg);
         max-width: 100%;
         height: auto;>
+        display: block;
     } 
