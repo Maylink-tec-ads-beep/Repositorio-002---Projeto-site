@@ -184,6 +184,10 @@ img {
    9. RESPONSIVIDADE
 ================================= */
 
+    html {
+        scroll-behavior: smooth;
+    }
+
 @media (max-width: 600px) {
 
     body {
