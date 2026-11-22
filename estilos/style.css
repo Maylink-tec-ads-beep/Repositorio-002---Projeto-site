@@ -1,9 +1,13 @@
+
+/* =================================
+   1. CONFIGURAÇÕES GERAIS
+================================= */
+
 * {
-    
     box-sizing: border-box;
 }
 
-:root{
+:root {
     --blue: #25345B;
     --blue-light: #A9C7F5;
     --purple: #5B4BD6;
@@ -11,6 +15,9 @@
     --lavender: #E8E5FF;
     --white: #FFFAFC;
 
+    /* Rosa para pequenos detalhes */
+    --pink: #FF70A6;
+    --pink-light: #FFC2D1;
 }
 
 body {
@@ -19,24 +26,37 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
+
     min-height: 100vh;
     margin: 0;
     padding: 40px 20px;
-    color: #1E2F5E;
- 
+
+    color: var(--blue);
 }
 
+/* =================================
+   2. CONTEÚDO PRINCIPAL
+================================= */
+
 main {
-    background-color: rgba(255, 250, 252, 0.90);
+    background-color: rgba(255, 250, 252, 0.50);
     backdrop-filter: blur(6px);
+
     width: 100%;
     max-width: 850px;
+
     margin: auto;
     padding: 35px;
-    border: 3px solid #5B4BD6;
+
+    border: 3px solid var(--purple);
     border-radius: 25px;
-    box-shadow: 5px 5px 0px #1E2F5E;
+
+    box-shadow: 5px 5px 0 var(--blue);
 }
+
+/* =================================
+   3. CABEÇALHO
+================================= */
 
 header {
     text-align: center;
@@ -44,43 +64,52 @@ header {
 }
 
 h1 {
-    color: #5B4BD6;
-  font-family: "Cherry Bomb One", system-ui;
-  font-weight: 400;
-  font-size: 2.8rem;
-  text-shadow: 3px 3px 0 #5B4BD6);
-  animation: flutuar 3s ease-in-out infinite;
-  text-align: center;
-  margin-bottom: 15px;
-  text-shadow: 3px 3px 0px #D8D1FF;
-  
+    color: var(--purple);
+    font-family: "Cherry Bomb One", system-ui;
+    font-weight: 400;
+    font-size: 2.8rem;
+
+    text-shadow: 3px 3px 0 var(--lavender);
+    animation: flutuar 3s ease-in-out infinite;
+
+    text-align: center;
+    margin-bottom: 15px;
 }
+
+/* =================================
+   4. SUBTÍTULOS E TEXTOS
+================================= */
 
 h2 {
-    color: #5B4BD6;
-  font-family: "Kavoon", serif;
-  font-weight: 400;
-  font-size: 1.6rem;
+    color: var(--purple);
+    font-family: "Kavoon", serif;
+    font-weight: 400;
+    font-size: 1.6rem;
 }
 
-p{
-    color: #2B3F7A	;
-  font-family: "Gorditas", serif;
-  font-weight: 400;
-  font-size: 1rem;
-  line-height: 1.8;
+p {
+    color: var(--blue);
+    font-family: "Gorditas", serif;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.8;
 }
+
+/* =================================
+   5. CARDS SCRAPBOOK
+================================= */
+
 
 article {
-    background-color: ;
+    background-color: var(--lavender);
 
     padding: 25px;
     margin: 30px 0;
 
-    border: 2px dashed var(--pink);
+    border: 2px dashed var(--lilac);
     border-radius: 18px;
 
-    box-shadow: 5px 5px 0 var(--pink-light);
+    box-shadow: 5px 5px 0 var(--blue-light);
 
     transition: transform 0.3s ease,
                 box-shadow 0.3s ease;
@@ -88,35 +117,45 @@ article {
     animation: aparecer 0.8s ease both;
 }
 
-article:nth-of-type(1) {
-    transform: rotate(-1deg);
-    animation-delay: 0.2s;
-}
-
-article:nth-of-type(2) {
-    transform: rotate(1deg);
-    animation-delay: 0.4s;
-}
-
 article:hover {
-    transform: translateY(-6px) rotate(0deg);
+    transform: translateY(-6px);
     box-shadow: 8px 8px 0 var(--purple);
 }
 
 
-/* SEÇÕES */
+/* =================================
+   6. SEÇÕES
+================================= */
+
 section {
-    background-color: rgba(232, 227, 255, 0.65);
+    background-color: rgba(232, 229, 255, 0.65);
+
     padding: 20px;
     margin: 25px 0;
+
     border-radius: 18px;
-    border-left: 6px solid #5B4BD6;
+    border-left: 6px solid var(--purple);
+
     transition: transform 0.3s ease;
 }
 
 section:hover {
     transform: translateY(-5px);
 }
+
+/* =================================
+   7. IMAGENS
+================================= */
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* =================================
+   8. ANIMAÇÕES
+================================= */
 
 @keyframes flutuar {
     0%, 100% {
@@ -164,7 +203,9 @@ section:hover {
     }
 }
 
-/* ACESSIBILIDADE */
+/* =================================
+   10. ACESSIBILIDADE
+================================= */
 
 @media (prefers-reduced-motion: reduce) {
     *, *::before, *::after {
@@ -172,9 +213,3 @@ section:hover {
         transition: none !important;
     }
 }
-
-img { src: url(imagens/banner.svg);
-        max-width: 100%;
-        height: auto;>
-        display: block;
-    } 
