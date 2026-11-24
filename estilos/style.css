@@ -58,6 +58,32 @@ main {
    3. CABEÇALHO
 ================================= */
 
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    margin: 10px 0 30px;
+}
+
+nav a {
+    font-family: "Kavoon", serif;
+    text-decoration: none;
+    color: var(--purple);
+    background-color: var(--lavender);
+    padding: 10px 20px;
+    border: 2px solid var(--purple);
+    border-radius: 999px;
+    box-shadow: 3px 3px 0 var(--blue);
+    transition: transform 0.2s ease, background-color 0.2s ease, color 0.2s ease;
+}
+
+nav a:hover {
+    background-color: var(--purple);
+    color: var(--white);
+    transform: translateY(-3px);
+}
+
 header {
     text-align: center;
     padding: 25px 10px;
