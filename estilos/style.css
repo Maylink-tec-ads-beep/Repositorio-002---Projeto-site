@@ -29,9 +29,53 @@ body {
 
     min-height: 100vh;
     margin: 0;
-    padding: 40px 20px;
-    
+
     color: var(--blue);
+}
+
+/* CABEÇALHO SUPERIOR */
+
+.cabecalho-site {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+
+    padding: 25px 5%;
+
+    background-color: var(--purple);
+
+    border-bottom: 4px solid var(--blue);
+    border-radius: 25px 25px 25px 25px;
+    box-shadow: 0 4px 10px rgba(0, 4, 12, 0.2);
+}
+
+/* IDENTIDADE À ESQUERDA */
+
+.identidade {
+    flex-shrink: 0;
+}
+
+.identidade h1 {
+    color: var(--white);
+    font-family: "Cherry Bomb One", system-ui;
+    font-weight: 400;
+    font-size: 2rem;
+
+    margin: 0;
+
+    text-shadow: 2px 2px 0 var(--purple);
+    animation: none;
+}
+
+.identidade h2 {
+    color: var(--blue-light);
+    font-family: "Mali", cursive;
+    font-size: 0.8rem;
+
+    margin: 5px 0 0;
 }
 
 html {
@@ -47,9 +91,9 @@ main {
     backdrop-filter: blur(6px);
 
     width: 100%;
-    max-width: 850px;
+    max-width: 1050px;
 
-    margin: auto;
+    margin: 55px auto;
     padding: 35px;
 
     border: 3px solid var(--purple);
@@ -62,40 +106,52 @@ main {
    3. CABEÇALHO
 ================================= */
 
-nav {
+/* MENU DE NAVEGAÇÃO */
+
+.cabecalho-site nav {
     display: flex;
-    flex-wrap: nowrap;
-    justify-content: center;
     align-items: center;
-    gap: 15px;
-
-    margin: 10px 0 30px;
-    padding: 12px 5px;
-
-    position: sticky;
-    top: 10px;
-    z-index: 10;
-
-    background-color: rgba(255, 250, 252, 0.75);
-    backdrop-filter: blur(8px);
-    border-radius: 20px;
+    justify-content: flex-end;
+    flex-wrap: nowrap;
+    gap: 22px;
 }
 
-nav a {
-    font-family: "Kavoon", serif;
-    font-size: 14px;
+.cabecalho-site nav a {
+    font-family: "Mali", cursive;
+    font-weight: 600;
+    font-size: 0.95rem;
+
     text-decoration: none;
-    color: var(--purple);
-    background-color: var(--lavender);
+    color: var(--white);
 
-    padding: 10px 16px;
-    border: 2px solid var(--purple);
-    border-radius: 20px;
-    box-shadow: 3px 3px 0 var(--blue);
+    padding: 8px 0;
 
-    white-space: norap;
+    white-space: nowrap;
 
-    transition: transform 0.2s ease, background-color 0.2s ease, color 0.2s ease;
+    transition: color 0.3s ease,
+                transform 0.3s ease;
+}
+
+.cabecalho-site nav a:hover {
+    color: var(--blue-light);
+    transform: translateY(-2px);
+}
+
+/* BOTÃO EM DESTAQUE */
+
+.cabecalho-site nav .nav-destaque {
+    background-color: var(--purple);
+    color: var(--white);
+
+    padding: 12px 20px;
+    border-radius: 25px;
+
+    box-shadow: 3px 3px 0 var(--pink);
+}
+
+.cabecalho-site nav .nav-destaque:hover {
+    background-color: var(--lilac);
+    color: var(--white);
 }
 
 nav a:hover {
@@ -391,6 +447,56 @@ img {
     }
 }
 
+@media (max-width: 850px) {
+
+    .cabecalho-site {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+        padding: 25px 15px;
+    }
+
+    .cabecalho-site nav {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 12px 18px;
+    }
+
+    main {
+        margin: 20px auto;
+    }
+}
+
+@media (max-width: 600px) {
+
+    body {
+        background-attachment: scroll;
+    }
+
+    .identidade h1 {
+        font-size: 1.8rem;
+    }
+
+    .identidade h2 {
+        font-size: 0.7rem;
+    }
+
+    .cabecalho-site nav a {
+        font-size: 0.85rem;
+    }
+
+    main {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.3rem;
+    }
+}
 
 /* =================================
    10. ACESSIBILIDADE
