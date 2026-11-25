@@ -30,8 +30,12 @@ body {
     min-height: 100vh;
     margin: 0;
     padding: 40px 20px;
-
+    
     color: var(--blue);
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 /* =================================
@@ -60,22 +64,37 @@ main {
 
 nav {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: center;
-    gap: 25px;
-    margin: 10px 0 20px;
+    align-items: center;
+    gap: 15px;
 
+    margin: 10px 0 30px;
+    padding: 12px 5px;
+
+    position: sticky;
+    top: 10px;
+    z-index: 10;
+
+    background-color: rgba(255, 250, 252, 0.75);
+    backdrop-filter: blur(8px);
+    border-radius: 20px;
 }
 
 nav a {
     font-family: "Kavoon", serif;
+    font-size: 14px;
     text-decoration: none;
     color: var(--purple);
     background-color: var(--lavender);
-    padding: 10px 20px;
+
+    padding: 10px 16px;
     border: 2px solid var(--purple);
     border-radius: 20px;
     box-shadow: 3px 3px 0 var(--blue);
+
+    white-space: norap;
+
     transition: transform 0.2s ease, background-color 0.2s ease, color 0.2s ease;
 }
 
@@ -85,27 +104,34 @@ nav a:hover {
     transform: translateY(-3px);
 }
 
-a{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 25px;
-    margin: 10px 0 20px;
-    position: sticky;
-    top: 10px;
-    z-index: 10;
+nav a:focus-visible,
+a.voltar:focus-visible,
+.contato-card:focus-visible {
+    outline: 3px solid var(--pink);
+    outline-offset: 4px;
+}
+
+a.voltar{
+    display: block;
+    width: fit-content;
+
+    margin: 20px auto;
     font-family: "Kavoon", serif;
     text-decoration: none;
+
     color: var(--purple);
     background-color: var(--lavender);
+
     padding: 10px 20px;
     border: 2px solid var(--purple);
     border-radius: 20px;
+
     box-shadow: 3px 3px 0 var(--blue);
+
     transition: transform 0.2s ease, background-color 0.2s ease, color 0.2s ease;
 }
 
-a:hover{
+a.voltar:hover{
     background-color: var(--purple);
     color: var(--white);
     transform: translateY(-3px);
@@ -142,11 +168,33 @@ h2 {
 
 }
 
-p {
+h3 {
+    color: var(--blue);
+    font-family: "Kavoon", serif;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+h3::before {
+    content: "✦ ";
+    color: var(--pink);
+}
+
+p, li {
     color: var(--blue);
     font-family: "Mali", cursive;
-  font-weight: 600;
-  font-style: normal;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 1.1rem;
+    line-height: 1.4;
+}
+
+summary{
+    cursor: pointer;
+    color: var(--blue);
+    font-family: "Mali", cursive;
+    font-weight: 600;
+    font-style: normal;
     font-size: 1.1rem;
     line-height: 1.4;
 }
@@ -159,8 +207,8 @@ p {
     width: 100%;
     max-width: 500px;
     margin: 0 auto 50px;
+    animation: flutuar 4s ease-in-out infinite;
 }
-
 
 article {
     background-color: var(--lavender);
@@ -199,6 +247,7 @@ section {
     border-left: 6px solid var(--purple);
 
     transition: transform 0.3s ease;
+    scroll-margin-top: 120px;
 }
 
 section:hover {
@@ -235,6 +284,11 @@ section:hover {
     font-size: 2rem;
 }
 
+.contato-icone-img {
+    width: 56px;
+    height: 56px;
+}
+
 .contato-titulo {
     font-family: "Kavoon", serif;
     color: var(--purple);
@@ -247,9 +301,10 @@ section:hover {
 }
 
 .contato-card:hover {
-    background-color: var(--purple);
-    color: var(--blue);
-    transform: translateY(-15px);
+    background-color: var(--lavender);
+    border-color: var(--pink);
+    box-shadow: 4px 4px 0 --pink-light;
+    transform: translateY(-6px);
 }
 
 /* =================================
@@ -260,6 +315,11 @@ img {
     max-width: 100%;
     height: auto;
     display: block;
+}
+
+.banner {
+    border-radius: 18px;
+    box-shadow: 4px 4px 0 var(--blue-light);
 }
 
 /* =================================
@@ -291,11 +351,6 @@ img {
 /* =================================
    9. RESPONSIVIDADE
 ================================= */
-
-    html {
-        scroll-behavior: smooth;
-    }
-
 @media (max-width: 600px) {
 
     body {
@@ -314,7 +369,38 @@ img {
     h2 {
         font-size: 1.3rem;
     }
+
+    nav {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    nav a {
+        padding: 8px 12px;
+        font-size: 0.9rem;
+    }
 }
+
+@media (max-width: 600px) {
+    nav {
+        gap: 8px;
+        padding: 8px;
+    }
+
+    nav a {
+        padding: 8px 12px;
+        font-size: 0.9rem;
+    }
+
+    .topo-card {
+        margin-bottom: 25px;
+    }
+
+    section {
+        padding: 15px;
+    }
+}
+
 
 /* =================================
    10. ACESSIBILIDADE
