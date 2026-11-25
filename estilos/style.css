@@ -369,16 +369,6 @@ img {
     h2 {
         font-size: 1.3rem;
     }
-
-    nav {
-        flex-wrap: wrap;
-        gap: 10px;
-    }
-
-    nav a {
-        padding: 8px 12px;
-        font-size: 0.9rem;
-    }
 }
 
 @media (max-width: 600px) {
