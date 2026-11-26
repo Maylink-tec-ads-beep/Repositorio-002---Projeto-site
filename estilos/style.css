@@ -76,7 +76,7 @@ nav {
     top: 10px;
     z-index: 10;
 
-    background-color: rgba(255, 250, 252, 0.75);
+    background-color: var(--lilac);
     backdrop-filter: blur(8px);
     border-radius: 20px;
 }
@@ -305,6 +305,134 @@ section:hover {
     border-color: var(--pink);
     box-shadow: 4px 4px 0 --pink-light;
     transform: translateY(-6px);
+}
+
+.introducao-habilidades{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.habilidades-grid{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 22px;
+    margin-top: 25px;
+}
+
+.habilidade-card{
+    position: relative;
+    background-color: var(--white);
+
+    border: 2px solid var(--lilac);
+    border-radius: 18px;
+    box-shadow: 5px 5px 0 var(--blue-light);
+
+    overflow: hidden;
+
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+
+    animation: aparecer 0.8s ease both;
+
+    padding: 20px;
+    text-align: center;
+}
+
+.habilidade-card:nth-child(odd) {
+    animation-delay: 0.2s;
+}
+
+.habilidade-card:hover {
+    transform: translateY(-5px);
+    rotate: 0deg;
+    box-shadow: 8px 8px 0 var(--purple);
+    border-color: var(--purple);
+}
+
+.habilidade-card summary {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+
+    position: relative;
+
+    padding-right: 20px;
+
+    cursor: pointer;
+    list-style: none;
+}
+
+.habilidade-card summary::webkit-details-marker {
+    display: none;
+}
+
+.habilidade-icone {
+    font-size: 2rem;
+    color: var(--purple);
+}
+
+.habilidade-nome {
+    font-family: "Kavoon", serif;
+    color: var(--purple);
+    font-size: 1.2rem;
+}
+
+.habilidade-etiqueta {
+    background-color: var(--lavender);
+    color: var(--blue);
+
+    font-family: "Mali", cursive;
+    color: var(--blue);
+    font-size: 0.9rem;
+    font-weight: 600;
+
+    padding: 4px 8px;
+    border-radius: 12px;
+}
+
+.habilidade-seta {
+    position: absolute;
+    top: 50%;
+    right: 18px;
+
+    transform: translateY(-50%);
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--pink);
+
+    transition: transform 0.3s ease;
+}
+
+.habilidade-card[open] {
+    border-color: var(--pink);
+    box-shadow: 8px 8px 0 var(--pink-light);
+}
+
+.habilidade-card[open] .habilidade-seta {
+    transform: translateY(-50%) rotate(45deg);
+}
+
+.habilidade-conteudo ul {
+    margin-top: 15px;
+    padding-left: 20px;
+    text-align: left;
+}
+
+.habilidade-conteudo li {
+    margin-bottom: 8px;
+    font-size: 0.95rem;
+}
+
+.habilidade-conteudo li::marker {
+    content: "✦ ";
+    color: var(--pink);
+}
+
+.habilidade-conteudo p {
+    border-top: 1px dashed var(--lilac);
+    padding-top: 10px;
+    margin-top: 15px;
+    font-size: 0.95rem;
 }
 
 /* =================================
