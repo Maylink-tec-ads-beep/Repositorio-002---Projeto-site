@@ -216,7 +216,7 @@ article {
     padding: 25px;
     margin: 30px 0;
 
-    border: 2px dashed var(--lilac);
+    border: 2px solid var(--lilac);
     border-radius: 18px;
 
     box-shadow: 5px 5px 0 var(--blue-light);
@@ -273,7 +273,7 @@ section:hover {
     color: var(--blue);
 
     background-color: var(--white);
-    border: 2px solid var(--purple);
+    border: 2px solid var(--lilac);
     border-radius: 18px;
     box-shadow: 4px 4px 0 var(--blue-light);
 
@@ -435,6 +435,68 @@ section:hover {
     font-size: 0.95rem;
 }
 
+.hotelaria {
+    border-top: 5px solid var(--lilac);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 18px;
+    margin-top: 15px;
+}
+
+.tecnologia {
+    border-top: 5px solid var(--pink);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 18px;
+    margin-top: 15px;
+}
+
+.hardskills {
+    border-top: 5px solid var(--pink-light);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 18px;
+    margin-top: 15px;
+}
+
+.comunicacao {
+    border-top: 5px solid var(--blue);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 18px;
+    margin-top: 15px;
+}
+
+.organizacao {
+    border-top: 5px solid var(--lilac);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 18px;
+    margin-top: 15px;
+}
+
+.resolucao-de-problemas{
+    border-top: 5px solid var(--pink);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 18px;
+    margin-top: 15px;
+}
+
+.dica-habilidades {
+    text-align: center;
+    font-family: "Mali", cursive;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--blue);
+    margin-top: 15px;
+}
+
+.habilidade-card summary:focus-visible {
+    outline: 3px solid var(--pink);
+    outline-offset: 4px;
+}
+
 /* =================================
    7. IMAGENS
 ================================= */
@@ -479,6 +541,22 @@ img {
 /* =================================
    9. RESPONSIVIDADE
 ================================= */
+
+@media (max-width: 600px) {
+    .habilidades-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .habilidade-card:nth-child(odd), .habilidade-card:nth-child(even) {
+        animation-delay: 0s;
+    }
+
+    .habilidade-card summary{
+        padding: 15px;
+    }
+}
+
 @media (max-width: 600px) {
 
     body {
