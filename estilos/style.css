@@ -437,50 +437,26 @@ section:hover {
 
 .hotelaria {
     border-top: 5px solid var(--lilac);
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-    gap: 18px;
-    margin-top: 15px;
 }
 
 .tecnologia {
     border-top: 5px solid var(--pink);
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-    gap: 18px;
-    margin-top: 15px;
 }
 
 .hardskills {
     border-top: 5px solid var(--pink-light);
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-    gap: 18px;
-    margin-top: 15px;
 }
 
 .comunicacao {
     border-top: 5px solid var(--blue);
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-    gap: 18px;
-    margin-top: 15px;
 }
 
 .organizacao {
     border-top: 5px solid var(--lilac);
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-    gap: 18px;
-    margin-top: 15px;
 }
 
 .resolucao-de-problemas{
     border-top: 5px solid var(--pink);
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-    gap: 18px;
-    margin-top: 15px;
 }
 
 .dica-habilidades {
