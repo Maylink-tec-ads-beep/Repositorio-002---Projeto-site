@@ -93,7 +93,7 @@ nav a {
     border-radius: 20px;
     box-shadow: 3px 3px 0 var(--blue);
 
-    white-space: norap;
+    white-space: nowrap;
 
     transition: transform 0.2s ease, background-color 0.2s ease, color 0.2s ease;
 }
@@ -303,7 +303,7 @@ section:hover {
 .contato-card:hover {
     background-color: var(--lavender);
     border-color: var(--pink);
-    box-shadow: 4px 4px 0 --pink-light;
+    box-shadow: 4px 4px 0 var(--pink-light);
     transform: translateY(-6px);
 }
 
@@ -362,11 +362,11 @@ section:hover {
     list-style: none;
 }
 
-.habilidade-card summary::webkit-details-marker {
+.habilidade-card summary::-webkit-details-marker {
     display: none;
 }
 
-.habilidade-icone {
+.habilidade-icon {
     font-size: 2rem;
     color: var(--purple);
 }
